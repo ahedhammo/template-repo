@@ -6,5 +6,10 @@
    devtool: 'inline-source-map',
    devServer: {
      static: './dist',
+     watchFiles: ['./src/template.html'],
+     open: true,
+     client: {
+       logging: 'warn',
+     },
    },
  });
